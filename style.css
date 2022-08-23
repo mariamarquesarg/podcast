@@ -1,0 +1,92 @@
+/* General */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #060a24;
+  background-color: #fff;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #060a24;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #00f3bb;
+  text-decoration: line-through;
+}
+
+a:focus {
+  color: #060a248f;
+  text-decoration: line-through;
+}
+
+/* Container */
+.container {
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+/* Footer */
+footer {
+  padding: 24px 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 36px 0;
+  }
+}
+
+footer > .container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  footer > .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  footer p {
+    margin-bottom: 0;
+  }
+}
+
+footer ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer ul li:not(:last-child) {
+  margin-right: 26px;
+}
